@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta charset="utf-8">
+    <title>My HTML Page</title>
+    <style>
+        div {
+            color: #0000ff
+        }
+        .italic_class {
+            color:#ff00ff;
+            font-style:italic
+        }
+    </style>
+</head>
+
 <body>
     <h1>Hello World</h1>
     <h2>What even is the world anyway?</h2>
@@ -12,23 +26,28 @@
         <article>This is article 1 within my header
             <p>I'm hosted with GitHub Pages.</p>
             <p> Paragraph 1 baby</p>
-            <p> Paragraph 2 baby</p>
+            <p class=italic_class> Paragraph 2 baby</p>
         </article>
 
         <article>This is article 2 within my header
-                <h3>Is it a bird?</h3>
-                <h4>Is it a plane?</h4>
+            <div>
+                <h3>Ask some questions:</h3>
+                <ul>
+                    <li>Is it a bird? </li>
+                    <li style="font-style:italic">Is it a plane? </li>
+                </ul>
                 <p>No.</p>
-                <!-- This is a comment -->
-                <h1>Flight of the Bumblebee?</h1>
-                <img src="images/lion.jpeg" alt="[picture of a lion]">
+            </div>
+            <!-- This is a comment -->
+            <h1>Flight of the Bumblebee?</h1>
+            <img src="images/lion.jpeg" alt="[picture of a lion]">
 
-    <a href="https://en.wikipedia.org/wiki/Lion">https://en.wikipedia.org/wiki/Lion</a>
+            <a href="https://en.wikipedia.org/wiki/Lion">https://en.wikipedia.org/wiki/Lion</a>
         </article>
         <aside>I'm not sure about asides yet.</aside>
     </main>
 
-<footer>This is my footer.</footer>
+    <footer>This is my footer.</footer>
 
 </body>
 
