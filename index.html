@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>My HTML Page</title>
-    <link rel="stylesheet" href="css/site.css" />
-    
+    <!--link rel="stylesheet" href="css/site.css" /-->
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
+
 </head>
 
 <body>
@@ -16,28 +17,37 @@
         This is my header.
     </header>
     <main>
-        <article>This is article 1 within my header
-            <p>I'm hosted with GitHub Pages.</p>
-            <p> Paragraph 1 baby</p>
-            <p class=italic_class> Paragraph 2 baby</p>
-        </article>
 
-        <article>This is article 2 within my header
-                <h3>Header not in the div</h3>
-            <div>
-                <h3>Ask some questions:</h3>
-                <ul>
-                    <li>Is it a bird? </li>
-                    <li style="font-style:italic">Is it a plane? </li>
-                </ul>
-                <p>No.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <article>This is article 1 within my header
+                    <p>I'm hosted with GitHub Pages.</p>
+                    <p> Paragraph 1 baby</p>
+                    <p class=italic_class> Paragraph 2 baby</p>
+                </article>
+
             </div>
-            <!-- This is a comment -->
-            <h1>Flight of the Bumblebee?</h1>
-            <img src="images/lion.jpeg" alt="[picture of a lion]">
+            <div class="col-md-4">
+                <article>This is article 2 within my header
+                    <h3>Header not in the div</h3>
+                    <div>
+                        <h3>Ask some questions:</h3>
+                        <ul>
+                            <li>Is it a bird? </li>
+                            <li style="font-style:italic">Is it a plane? </li>
+                        </ul>
+                        <p>No.</p>
+                    </div>
+                    <!-- This is a comment -->
+                    <h1>Flight of the Bumblebee?</h1>
+                    <img src="images/lion.jpeg" alt="[picture of a lion]">
 
-            <a href="https://en.wikipedia.org/wiki/Lion">https://en.wikipedia.org/wiki/Lion</a>
-        </article>
+                    <a href="https://en.wikipedia.org/wiki/Lion">https://en.wikipedia.org/wiki/Lion</a>
+                </article>
+
+            </div>
+        </div>
+
         <aside>I'm not sure about asides yet.</aside>
     </main>
 
