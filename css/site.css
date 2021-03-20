@@ -1,0 +1,19 @@
+div {
+  color: #0000ff;
+}
+div h3 {
+  color: #ff7700;
+}
+h3,
+h1 {
+  background-color: #babada;
+}
+.italic_class {
+  color: #ff00ff;
+  font-style: italic;
+}
+@media screen and (min-width: 680px) {
+  body {
+    background: linear-gradient(yellow, red);
+  }
+}
