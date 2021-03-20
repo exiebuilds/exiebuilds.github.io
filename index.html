@@ -7,6 +7,21 @@
     <!--link rel="stylesheet" href="css/site.css" /-->
     <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
 
+    <script src="js/ScriptFile.js"></script>
+
+    <script>
+        function promptUser() {
+            var txt;
+
+            var name = window.prompt("Enter your name")
+            if (name != null || name != "") {
+                txt = "Hello " + name;
+            }
+            document.getElementById('name').innerHTML = txt
+
+
+        }
+    </script>
 </head>
 
 <body>
@@ -20,9 +35,12 @@
 
         <div class="row">
             <div class="col-md-4">
-                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                <button type="button" onclick="showDate()">
                     Set the date </button>
                 <p id="demo"></p>
+                <button type="button2" onclick="promptUser()">
+                    Get your name </button>
+                <p id="name"></p>
             </div>
             <div class="col-md-4">
                 <article>This is article 1 within my header
