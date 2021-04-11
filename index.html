@@ -47,14 +47,17 @@
                     <p>I'm hosted with GitHub Pages.</p>
                     <p> Paragraph 1 baby</p>
                     <p class=italic_class> Paragraph 2 baby</p>
+                    <p> Cost to read: &euro;0.00, &#174; &copy; to me</p>
                 </article>
 
             </div>
             <div class="col-md-4">
-                <article>This is article 2 within my header
-                    <h3>Header not in the div</h3>
+                <article>This is <mark>article 2</mark> <sup>within</sup><sub> my</sub><del>heading</del>
+                    <ins>header</ins>
+                    <h3>Header <small>not in the div</small>
+                    </h3>
                     <div>
-                        <h3>Ask some questions:</h3>
+                        <h3>Ask &nbsp&nbspsome &nbsp&nbspquestions:</h3>
                         <ul>
                             <li>Is it a bird? </li>
                             <li style="font-style:italic">Is it a plane? </li>
@@ -62,7 +65,7 @@
                         <p>No.</p>
                     </div>
                     <!-- This is a comment -->
-                    <h1>Flight of the Bumblebee?</h1>
+                    <h1>Flight of the <em>Bumblebee?</em></h1>
                     <img src="images/lion.jpeg" alt="[picture of a lion]">
 
                     <a href="https://en.wikipedia.org/wiki/Lion">https://en.wikipedia.org/wiki/Lion</a>
@@ -73,6 +76,19 @@
 
         <aside>I'm not sure about asides yet.</aside>
     </main>
+
+    <audio>
+        <source src="bee_dickinson_aa_128kb.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        var audio;
+        window.addEventListener('load', init, false);
+        function init() {
+            audio = document.getElementsByTagName('audio')[0];
+            audio.play()
+        }
+    </script>
 
     <footer>This is my footer.</footer>
 
